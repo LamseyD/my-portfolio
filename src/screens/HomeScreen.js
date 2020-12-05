@@ -18,22 +18,14 @@ class HomeScreen extends Component {
                         />
 
                         <div className="banner-text">
-                            <h1> TITLE </h1>
+                            <h1> Hi. I'm Lam </h1>
+                            <p> Fullstack Developer and Computer Engineer </p>
                             <hr />
                             <p> SKILLS | SKILLS </p>
-                            <div className="social-links">
-                                {/* insert links here */}
-                                <a href="/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fa fa-linkedin-square" aria-hidden="true" />
-                                </a>
 
-                                {/* insert links here */}
-                                <a href="/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fa fa-linkedin-square" aria-hidden="true" />
-                                </a>
-
-                            </div>
                         </div>
+
+
 
 
                     </Cell>

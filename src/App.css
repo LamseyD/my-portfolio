@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #f2f2f7;
 }
 
 .App-logo {
@@ -39,22 +40,17 @@
 }
 
 .header-color {
-  background: #ee0979;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff6a00, #ee0979);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #1c1c1e;  /* fallback for old browsers */
 }
 
 .landing-grid{
+  /*
     background: #ee0979;
-    /* fallback for old browsers */
+    fallback for old browsers 
     background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
-    /* Chrome 10-25, Safari 5.1-6 */
+    Chrome 10-25, Safari 5.1-6 
     background: linear-gradient(to right, #ff6a00, #ee0979);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     position: fixed;
     top:0;
@@ -80,6 +76,7 @@
 
 .banner-text h1 {
   font-size: 66px;
+  margin-bottom: 0px;
   font-weight: bold;
   color: white;
 }
@@ -112,6 +109,13 @@
 .projects-grid{
   display: flex;
   justify-content: space-evenly;
+}
+
+.footer{
+  height: 300;
+  width: 100%;
+  bottom: 0;
+  color: #1c1c1e;
 }
 /* 
 @font-face {
