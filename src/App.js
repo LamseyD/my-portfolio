@@ -1,7 +1,8 @@
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from 'react-mdl'
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
 import Main from './components/main.js';
 import { Link } from 'react-router-dom'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function App() {
   return (
     <div className="App">
@@ -31,19 +32,24 @@ function App() {
           <Content>
             <div className="page-content" />
             <Main />
+            <div className="page-footer" style={{ backgroundColor: "#1c1c1e", position: "fixed", width: "100%", bottom: "0", height: "150px" }}>
+              <div className="social-links">
+                <a href="https://github.com/LamseyD" rel="noopener noreferrer" target="_blank">
+                  <i className="fab fa-github-square" aria-hidden="true" />
+                </a>
+                <a href="https://www.linkedin.com/in/dinhlam/" rel="noopener noreferrer" target="_blank">
+                  <i className="fab fa-linkedin-square" aria-hidden="true" />
+                </a>
+                <a href="http://https://www.instagram.com/lamseyd/" rel="noopener noreferrer" target="_blank">
+                  <i className="fab fa-instagram-square" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+
           </Content>
 
-          <Footer size="mini">
-            <FooterSection type="left" logo="Title">
-              <FooterLinkList>
-                <a href="/">Help</a>
-                <a href="/">Privacy & Terms</a>
-              </FooterLinkList>
-            </FooterSection>
-          </Footer>
 
         </Layout>
-
       </div>
     </div>
   );
