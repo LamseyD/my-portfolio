@@ -103,7 +103,8 @@
 .social-links i {
   color: white;
   font-size: 3em;
-  padding: 8px
+  padding: 8px;
+  margin-top: 15px;
 }
 
 .projects-grid{
