@@ -17,7 +17,7 @@ class HomeScreen extends Component {
                             className="avatar-img"
                         />
 
-                        <div className="banner-text">
+                        <div className="banner-text" >
                             <h1> Hi. I'm Lam </h1>
                             <p> Fullstack Developer and Computer Engineer </p>
                             <hr />
