@@ -113,10 +113,11 @@
 }
 
 .footer{
-  height: 300;
+  height: 200;
   width: 100%;
   bottom: 0;
   color: #1c1c1e;
+  position: fixed;
 }
 /* 
 @font-face {

@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title="Hi." scroll style={{ backgroundColor: "#1c1c1e" }}>
+          <Header className="header-color" title="Dinh Lam Dang" scroll style={{ backgroundColor: "#1c1c1e" }}>
             <Navigation>
               <Link to="/">Home</Link>
               <Link to="/about-me">About Me</Link>
