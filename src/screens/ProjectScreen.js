@@ -82,8 +82,8 @@ class ProjectScreen extends Component {
             <div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab> React </Tab>
-                    <Tab> VueJS </Tab>
-                    <Tab> Python </Tab>
+                    <Tab> Vue </Tab>
+                    <Tab> Game Development </Tab>
                 </Tabs>
 
                     <Grid >
