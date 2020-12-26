@@ -40,7 +40,7 @@ function App() {
                 <a href="https://www.linkedin.com/in/dinhlam/" rel="noopener noreferrer" target="_blank">
                   <i className="fab fa-linkedin-square" aria-hidden="true" />
                 </a>
-                <a href="http://https://www.instagram.com/lamseyd/" rel="noopener noreferrer" target="_blank">
+                <a href="https://www.instagram.com/lamseyd/" rel="noopener noreferrer" target="_blank">
                   <i className="fab fa-instagram-square" aria-hidden="true" />
                 </a>
               </div>
