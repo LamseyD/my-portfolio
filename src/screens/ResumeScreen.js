@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell } from 'react-mdl'
-// import myResume from '../assets/Lam-Dec-24.pdf'
-// import traditionalResume from '../assets/Lam-alt.pdf'
+import { Tabs, Tab, Grid, Cell, Button } from 'react-mdl'
+import myResume from '../assets/Lam-Dec-24.pdf'
+import traditionalResume from '../assets/Lam-alt.pdf'
 
 class ResumeScreen extends Component {
     constructor(props) {
@@ -15,17 +15,22 @@ class ResumeScreen extends Component {
         if (this.state.activeTab === 0) {
             return (
                 <div>
-                    <div className="resume-div" style={{ marginBottom: "200px" }}>
-                        <embed src="%PUBLIC_URL%/Lam-Dec-24.pdf" width="100%" height="1500px" />
+                    <div className="resume-div" >
+                        {/* <embed src={myResume} width="100%" height="1500px" /> */}
+
+
+
                         <div className="resume-desc" style={{ paddingTop: "50px" }}>
+
+
                             <p>
                                 Information valid as of December 25th, 2020. Please send me an email for a more updated resume (if available).
                             </p>
                             <p>
-                                References and Cover Letter are also available upon request.
+                                References and Cover Letter and Transcript are also available upon request.
                             </p>
                             <small>
-                                Resume created with Vue.js
+                                Made with Vue.js
                             </small>
                         </div>
                     </div>
@@ -35,13 +40,13 @@ class ResumeScreen extends Component {
             return (
                 <div>
                     <div className="resume-div" style={{ marginBottom: "200px" }}>
-                        <embed src="%PUBLIC_URL%/Lam-alt.pdf" width="100%" height="1500px" />
+                        <a href={traditionalResume}> Click Here to View :) </a>
                         <div className="resume-desc" style={{ paddingTop: "50px" }}>
                             <p>
                                 Information valid as of December 25th, 2020. Please send me an email for a more updated resume (if available).
                             </p>
                             <p>
-                                References and Cover Letter are also available upon request.
+                                References and Cover Letter and Transcript are also available upon request.
                             </p>
                         </div>
                     </div>
@@ -52,18 +57,40 @@ class ResumeScreen extends Component {
 
     render() {
         return (
-            <div>
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab> Modern </Tab>
-                    <Tab> Traditional </Tab>
-                </Tabs>
+            <div style = {{height:'100%'}} >
 
-                <Grid >
-                    <Cell col={12}>
-                        <div className="content">{this.toggleCategories()}
-                        </div>
-                    </Cell>
-                </Grid>
+                <div className="resume-desc" style={{ paddingTop: "50px" }}>
+                    <h4>
+                        Information valid as of December 25th, 2020. Please send me an email for a more updated resume (if available).
+                    </h4>
+                    <i >
+                        References and Cover Letter and Transcript are also available upon request.
+                    </i>
+                </div>
+
+                <div className="resume" style = {{display: 'flex', height: '70%', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly'}}>
+                    <div className="divider">
+                    </div>
+                    <div className="modern-resume">
+                        <a href={myResume} style={{ color: "#1c1c1e" }} rel="noopener noreferrer" target="_blank"> 
+                            <Button raised ripple style = {{height: '100px', width: '200px'}}>
+                                Modern
+                            </Button>
+                        </a>
+
+                    </div>
+
+                    <div className="traditional-resume">
+                        <a href={traditionalResume} style={{ color: "#1c1c1e" }} rel="noopener noreferrer" target="_blank"> 
+                            <Button raised ripple style = {{height: '100px', width: '200px'}}>
+                                Classic
+                            </Button>
+                        </a>
+                    </div>
+                </div>
+
+
+
             </div>
 
 
