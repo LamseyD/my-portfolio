@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell } from 'react-mdl'
-import myResume from '../assets/Lam-Dec-24.pdf'
-import traditionalResume from '../assets/Lam-alt.pdf'
+// import myResume from '../assets/Lam-Dec-24.pdf'
+// import traditionalResume from '../assets/Lam-alt.pdf'
 
 class ResumeScreen extends Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class ResumeScreen extends Component {
             return (
                 <div>
                     <div className="resume-div" style={{ marginBottom: "200px" }}>
-                        <embed src={myResume} width="100%" height="1500px" />
+                        <embed src="%PUBLIC_URL%/Lam-Dec-24.pdf" width="100%" height="1500px" />
                         <div className="resume-desc" style={{ paddingTop: "50px" }}>
                             <p>
                                 Information valid as of December 25th, 2020. Please send me an email for a more updated resume (if available).
@@ -35,7 +35,7 @@ class ResumeScreen extends Component {
             return (
                 <div>
                     <div className="resume-div" style={{ marginBottom: "200px" }}>
-                        <embed src={traditionalResume} width="100%" height="1500px" />
+                        <embed src="%PUBLIC_URL%/Lam-alt.pdf" width="100%" height="1500px" />
                         <div className="resume-desc" style={{ paddingTop: "50px" }}>
                             <p>
                                 Information valid as of December 25th, 2020. Please send me an email for a more updated resume (if available).
