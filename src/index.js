@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomeScreen from './screens/HomeScreen';
 import reportWebVitals from './reportWebVitals';
 import App from './App'
 import 'react-mdl/extra/material.css';
