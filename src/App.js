@@ -32,7 +32,7 @@ function App() {
           <Content>
             <div className="page-content" />
             <Main />
-            <div className="page-footer" style={{ backgroundColor: "#1c1c1e", position: "fixed", width: "100%", bottom: "0", height: "150px" }}>
+            <div className="page-footer" style={{ backgroundColor: "#1c1c1e", position: "fixed", width: "100%", bottom: "0", height: "100px" }}>
               <div className="social-links">
                 <a href="https://github.com/LamseyD" rel="noopener noreferrer" target="_blank">
                   <i className="fab fa-github-square" aria-hidden="true" />
