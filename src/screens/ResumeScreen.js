@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Button } from 'react-mdl'
+import { Grid, Cell,Button } from 'react-mdl'
 import myResume from '../assets/Lam-Dec-24.pdf'
 import traditionalResume from '../assets/Lam-alt.pdf'
 
