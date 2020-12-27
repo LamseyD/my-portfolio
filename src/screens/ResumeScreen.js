@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell,Button } from 'react-mdl'
+import { Button } from 'react-mdl'
 import myResume from '../assets/Lam-Dec-24.pdf'
 import traditionalResume from '../assets/Lam-alt.pdf'
 
@@ -58,7 +58,7 @@ class ResumeScreen extends Component {
     render() {
         return (
             <div style = {{height:'100%'}} >
-
+                
                 <div className="resume-desc" style={{ paddingTop: "50px" }}>
                     <h4>
                         Information valid as of December 25th, 2020. Please send me an email for a more updated resume (if available).
