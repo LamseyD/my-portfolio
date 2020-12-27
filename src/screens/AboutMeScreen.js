@@ -7,29 +7,36 @@ import Image2 from '../assets/IMG_2294.jpg'
 import Image3 from '../assets/IMG_3274.jpg'
 import Image4 from '../assets/IMG_2019.jpg'
 
+import ReactPlayer from 'react-player'
+
 class AboutMeScreen extends Component {
     render() {
         return (
             <div>
                 <div className="about-me">
-                    <h1>
-                        About Me
-                    </h1>
                     <Grid>
                         <Cell col={12} style={{}}>
-                            <div style={{ display: 'flex', flexDirection: 'row'}}>
-                                <div style={{ padding: '100px', width: '50%', marginTop: '55px'}}>
+
+                            <div style={{ display: 'flex', flexDirection: 'row', height: '100%', alignItems: 'center', justifyContent: 'center', bottom:'70px', position: 'relative'}}>
+
+
+                                <div style={{ paddingLeft: '100px', paddingRight: '50px', width: '50%' }}>
+                                    <h1>
+                                        About Me
+                                    </h1>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                        Hi again. My name is Lam and I'm an aspiring fullstack developer and a computer engineering student based in Toronto, Ontario. I enjoy doing web and app development using Node.js frameworks, especially React. Since I love gaming, I also do some game development on the side just for fun, using Lua and LOVE2D game development framework.
                                     </p>
 
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                        I'm also proficient in doing backend work with object oriented programming, either with Java or Python, and I have some experience with Natural Language Processing and Machine Learning with Scikit-Learn and NLTK
                                     </p>
+
+
                                 </div>
 
-                                <div style={{ width: '50%', display: 'flex', justifyContent: 'center', marginTop:'50px'}}>
-                                    <Carousel indicators = {false} style = {{width:'70%'}}>
+                                <div style={{ width: '50%', display: 'flex', justifyContent: 'center' }}>
+                                    <Carousel indicators={false} style={{ width: '70%' }}>
                                         <Carousel.Item>
                                             <img
                                                 className="d-block w-100 carousel-img"
@@ -38,7 +45,7 @@ class AboutMeScreen extends Component {
                                             />
                                             <Carousel.Caption>
                                                 <div className="my-carousel-caption">
-                                                <p>This is me!</p>
+                                                    <p>This is me!</p>
 
                                                 </div>
                                             </Carousel.Caption>
@@ -52,7 +59,7 @@ class AboutMeScreen extends Component {
 
                                             <Carousel.Caption>
                                                 <div className="my-carousel-caption">
-                                                <p>With friends at Dundas Peak!</p>
+                                                    <p>With friends at Dundas Peak!</p>
 
                                                 </div>
                                             </Carousel.Caption>
@@ -66,7 +73,7 @@ class AboutMeScreen extends Component {
 
                                             <Carousel.Caption>
                                                 <div className="my-carousel-caption">
-                                                <p>Toronto Blue Jays Winter Fest 2019</p>
+                                                    <p>Toronto Blue Jays Winter Fest 2019</p>
 
                                                 </div>
                                             </Carousel.Caption>
@@ -79,8 +86,8 @@ class AboutMeScreen extends Component {
                                             />
 
                                             <Carousel.Caption>
-                                            <div className="my-carousel-caption">
-                                                <p>Kite festival in Brampton</p>
+                                                <div className="my-carousel-caption">
+                                                    <p>Kite festival in Brampton</p>
 
                                                 </div>
                                             </Carousel.Caption>
@@ -88,6 +95,41 @@ class AboutMeScreen extends Component {
                                     </Carousel>
 
                                 </div>
+
+
+                            </div>
+                            
+                            <div className = "horizontal-divider">
+                                <hr style = {{  border: '1px solid #1c1c1e', width: '50%', position: 'relative', left: '25%'}}></hr>
+                            </div>
+
+                            <div style={{ display: 'flex', flexDirection: 'row', height: '100%', alignItems: 'center', justifyContent: 'center', bottom:'70px', position: 'relative'}}>
+                                <div className="about-me-text" style={{ width: '50%' }}>
+                                    <div>
+                                        <iframe width="720" height="405"
+                                            src="https://www.youtube.com/embed/S-nSNONM_n0">
+                                        </iframe>
+                                    </div>
+                                    <div>
+                                        <i>
+                                            Me taking off in a F/A-18C in DCS Flight Simulator
+                                        </i>
+                                    </div>
+                                    
+                                    <div style = {{marginTop: '30px'}}>
+                                        <p>
+                                            I have a very long list of hobbies since I am always open to learn new things, I do a little bit of photography once in awhile with my DSLR. However playing the guitar is always on the top of my list. I find it super relaxing and satisfying when I hear the music coming out of my guitar. I love watching sports, whether football or hockey, but I love baseball the most, go Jays! (and occasionally the Tampa Bay Rays.)
+                                        </p>
+
+                                        <p>
+                                            I am also a huge nerd for flying things, the aerospace industry, rockets, satelites, planes or helicopters. Sometimes during my free time you can catch me flying around in a Sikorsky Blackhawk UH-60M or a McDonnell Douglas F/A-18C on flight sims.
+                                        </p>
+                                    </div>
+
+
+
+                                </div>
+
                             </div>
 
 
