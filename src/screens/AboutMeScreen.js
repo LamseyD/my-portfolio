@@ -7,20 +7,17 @@ import Image2 from '../assets/IMG_2294.jpg'
 import Image3 from '../assets/IMG_3274.jpg'
 import Image4 from '../assets/IMG_2019.jpg'
 
-import ReactPlayer from 'react-player'
-
 class AboutMeScreen extends Component {
     render() {
         return (
             <div>
                 <div className="about-me">
-                    <Grid>
-                        <Cell col={12} style={{}}>
-
-                            <div style={{ display: 'flex', flexDirection: 'row', height: '100%', alignItems: 'center', justifyContent: 'center', bottom:'70px', position: 'relative'}}>
+                    <div style={{ height: '100vh'}}>
 
 
-                                <div style={{ paddingLeft: '100px', paddingRight: '50px', width: '50%' }}>
+                        <Grid style = {{height: '90%'}}>
+                            <Cell col={6} style = {{display: 'flex', alignItems:'center',}}>
+                                <div style={{ padding: '5em'}}>
                                     <h1>
                                         About Me
                                     </h1>
@@ -34,8 +31,10 @@ class AboutMeScreen extends Component {
 
 
                                 </div>
+                            </Cell>
 
-                                <div style={{ width: '50%', display: 'flex', justifyContent: 'center' }}>
+                            <Cell col={6} style = {{display: 'flex', alignItems:'center'}}>
+                                <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center' }}>
                                     <Carousel indicators={false} style={{ width: '70%' }}>
                                         <Carousel.Item>
                                             <img
@@ -95,48 +94,55 @@ class AboutMeScreen extends Component {
                                     </Carousel>
 
                                 </div>
-
-
-                            </div>
+                            </Cell>
                             
-                            <div className = "horizontal-divider">
-                                <hr style = {{  border: '1px solid #1c1c1e', width: '50%', position: 'relative', left: '25%'}}></hr>
-                            </div>
 
-                            <div style={{ display: 'flex', flexDirection: 'row', height: '100%', alignItems: 'center', justifyContent: 'center', bottom:'70px', position: 'relative'}}>
-                                <div className="about-me-text" style={{ width: '50%' }}>
-                                    <div>
-                                        <iframe width="720" height="405"
-                                            src="https://www.youtube.com/embed/S-nSNONM_n0">
-                                        </iframe>
+                        </Grid>
+
+                    </div>
+
+                    <div style = {{height: '5em', backgroundColor:'#f2f2f2'}}>
+
+                    </div>
+
+                    <div style = {{height: '100vh', display: 'flex', justifyContent: 'center', alignItems:'center', paddingTop: '5em'}}>
+                        <Grid style = {{height: '90%', marginTop:'7em'}}>
+                            <Cell col = {12}>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                        <div className="about-me-text" style={{ width: '50%' }}>
+                                            <div className = "video-container">
+                                                <iframe className = "responsive-iframe" title="Flying around at the speed of sound"
+                                                    src="https://www.youtube.com/embed/S-nSNONM_n0">
+                                                </iframe>
+                                            </div>
+                                            <div>
+                                                <i>
+                                                    Me taking off in a F/A-18C in DCS Flight Simulator
+                                                </i>
+                                            </div>
+
+                                            <div style={{ marginTop: '3em', paddingBottom: '10em'}}>
+                                                <p>
+                                                    I have a very long list of hobbies since I am always open to learn new things, I do a little bit of photography once in awhile with my DSLR. However playing the guitar is always on the top of my list. I find it super relaxing and satisfying when I hear the music coming out of my guitar. I love watching sports, whether football or hockey, but I love baseball the most, go Jays! (and occasionally the Tampa Bay Rays.)
+                                                </p>
+
+                                                <p>
+                                                    I am also a huge nerd for flying things, the aerospace industry, rockets, satelites, planes or helicopters. Sometimes during my free time you can catch me flying around in a Sikorsky Blackhawk UH-60M or a McDonnell Douglas F/A-18C on flight sims.
+                                                </p>
+                                            </div>
+
+
+
+                                        </div>
+
                                     </div>
-                                    <div>
-                                        <i>
-                                            Me taking off in a F/A-18C in DCS Flight Simulator
-                                        </i>
-                                    </div>
-                                    
-                                    <div style = {{marginTop: '30px'}}>
-                                        <p>
-                                            I have a very long list of hobbies since I am always open to learn new things, I do a little bit of photography once in awhile with my DSLR. However playing the guitar is always on the top of my list. I find it super relaxing and satisfying when I hear the music coming out of my guitar. I love watching sports, whether football or hockey, but I love baseball the most, go Jays! (and occasionally the Tampa Bay Rays.)
-                                        </p>
-
-                                        <p>
-                                            I am also a huge nerd for flying things, the aerospace industry, rockets, satelites, planes or helicopters. Sometimes during my free time you can catch me flying around in a Sikorsky Blackhawk UH-60M or a McDonnell Douglas F/A-18C on flight sims.
-                                        </p>
-                                    </div>
-
-
-
-                                </div>
-
-                            </div>
-
-
-                        </Cell>
-                    </Grid>
+                                </Cell>
+                        </Grid>
+                    </div>
 
                 </div>
+
+
 
             </div>
         )
