@@ -6,16 +6,27 @@ import App from './App'
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
+import dotenv from 'dotenv'
+
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk'
+import reducers from './reducers'
+
+dotenv.config()
+
+const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
-  <React.StrictMode>
-  <BrowserRouter> 
-      <App />
-  </BrowserRouter>
+  <Provider store = {store}>
+    <BrowserRouter> 
+        <App />
+    </BrowserRouter>
+  </Provider>
 
 
-  </React.StrictMode>,
+,
   document.getElementById('root')
 );
 

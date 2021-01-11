@@ -9,7 +9,7 @@ class HomeScreen extends Component {
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
-                <Grid className="landing-grid" style = {{marginTop: '100px'}}>
+                <Grid className="landing-grid" style = {{marginTop: '10vh'}}>
                     <Cell col={12}>
                         <img
                             src={profilePicture}
@@ -17,7 +17,7 @@ class HomeScreen extends Component {
                             className="avatar-img"
                         />
 
-                        <div className="banner-text" >
+                        <div className="banner-text">
                             <h1> Hi. I'm Lam </h1>
                             <p> Fullstack Developer and Computer Engineer </p>
                             <hr />

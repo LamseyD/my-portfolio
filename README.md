@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Known Issues
+- Developed on 2560 x 1440 screen, needs to be refactored to work with smaller devices. Looking into further fixes with grids (property xs and sm of material ui)
+- Should transition to use material ui/react bootstrap, react-mdl is not responsive
