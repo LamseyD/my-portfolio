@@ -16,8 +16,8 @@ export default makeStyles({
     },
 
     icon: {
-      height: '7em',
-      width: '7em',
+      height: '100px',
+      width: '100px',
       border: '0.25em solid white',
       position: 'relative',
       bottom: '35px',

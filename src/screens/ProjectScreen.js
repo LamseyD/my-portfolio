@@ -1,100 +1,84 @@
-import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, CardText, IconButton } from 'react-mdl'
+import React, { useState } from 'react';
+import { Tabs, Tab } from 'react-mdl'
+import { Grid } from '@material-ui/core'
+import useStyles from './styles'
 
-class ProjectScreen extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            activeTab: 0
-        };
-    }
+import ProjectCard from '../components/ProjectCard/ProjectCard'
+import memories from '../assets/memories.PNG'
+import employees from '../assets/employee.PNG'
+import stepFinder from '../assets/stepFinder.jpg'
+import smartShoppers from '../assets/smartShoppers.PNG'
+import oakTale from '../assets/oakTale.PNG'
+const ProjectScreen = () => {
 
-    toggleCategories() {
-        if (this.state.activeTab === 0) {
-            return (
-                <div className = "projects-grid">
-                {/* project 1*/}
-                <Card shadow={5} style = {{minWidth: '450', magin: 'auto'}}>
-                    <CardTitle style={{color: 'black', height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png) center / cover'}} > React Project #1</CardTitle>
-                    <CardText>
-                        HELLO
-                    </CardText>
-                    <CardActions border>
-                        <Button colored> Github </Button>
-                        <Button colored> Github </Button>
-                    </CardActions>
-                    <CardMenu style = {{color:'#fff'}}> 
-                        <IconButton name="share"/>
-                    </CardMenu>
-                </Card>
+    const [activeTab, setActiveTab] = useState(0)
 
-                <Card shadow={5} style = {{minWidth: '450', magin: 'auto'}}>
-                <CardTitle style={{color: 'black', height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png) center / cover'}} > React Project #1</CardTitle>
-                <CardText>
-                    HELLO
-                </CardText>
-                <CardActions border>
-                    <Button colored> Github </Button>
-                    <Button colored> Github </Button>
-                </CardActions>
-                <CardMenu style = {{color:'#fff'}}> 
-                    <IconButton name="share"/>
-                </CardMenu>
-                </Card>
+    const classes = useStyles()
 
-                <Card shadow={5} style = {{minWidth: '450', magin: 'auto'}}>
-                <CardTitle style={{color: 'black', height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png) center / cover'}} > React Project #1</CardTitle>
-                <CardText>
-                    HELLO
-                </CardText>
-                <CardActions border>
-                    <Button colored> Github </Button>
-                    <Button colored> Github </Button>
-                </CardActions>
-                <CardMenu style = {{color:'#fff'}}> 
-                    <IconButton name="share"/>
-                </CardMenu>
-                </Card>
-                </div>
-            )
-        } else if (this.state.activeTab === 1) {
+    const toggleCategories = () => {
+        if (activeTab === 0) {
             return (
                 <div>
-                    <h1>
-                        tab 2
-                    </h1>
+                    <Grid className = {classes.mainContainer} container alignItems="stretch">
+                        <Grid className = {classes.cardItem} item xs = {12} lg = {3} sm = {6}>
+                            <ProjectCard title="iMemories" description="A simple image sharing web application written with JavaScript and React.js with authentication and a database" selectedFile = {memories} tools = "React.js, MongoDB, Express, Node.js" github = "https://github.com/LamseyD/memories-mern"/>
+                        </Grid>
+                        <Grid className = {classes.cardItem} item xs = {12} lg = {3} sm = {6}>
+                            <ProjectCard title="myEmployees" description="A employee management system written with JavaScript and React.js " selectedFile = {employees} tools = "React.js, MySQL, Express, Node.js" github = "https://github.com/LamseyD/simple-crud"/>
+                        </Grid>
+                        <Grid className = {classes.cardItem} item xs = {12} lg = {3} sm = {6}>
+                            <ProjectCard title="stepFinder" description="A exercise helper app to help users achieve their walking step goal written with JavaScript and React Native" tools = "React Native, TypeScript, JavaScript" selectedFile = {stepFinder} github = "https://github.com/LamseyD/step-finder"/>
+                        </Grid>
+                        <Grid className = {classes.cardItem} item xs = {12} lg = {3} sm = {6}>
+                            <ProjectCard title="Other smaller React Native Apps" description = "A collection of other smaller React Native app written with JavaScript" tools = "React Native, JavaScript" github = "https://github.com/LamseyD/React-Native-Mini-Apps"/>
+                        </Grid>
+                    </Grid>
                 </div>
+
             )
-        } else if (this.state.activeTab === 2) {
+        } else if (activeTab === 1) {
             return (
                 <div>
-                    <h1>
-                        tab 3
-                    </h1>
+                    <Grid className = {classes.mainContainer} container alignItems="stretch">
+                        <Grid className = {classes.cardItem} item xs = {12} sm = {3}>
+                            <ProjectCard title="smartShoppers" description = "A shopping system management written with JavaScript and Vue.js - Frontend Developer - School Project" selectedFile = {smartShoppers} tools = "Vue.Js, JavaScript" youtube = "https://www.youtube.com/watch?v=ryAGjLRN-Yc&feature=youtu.be"/>
+                        </Grid>
+                    </Grid>
+                </div>
+            )
+        } else if (activeTab === 2) {
+            return (
+                <div>
+                    <Grid className = {classes.mainContainer} container alignItems="stretch">
+                        <Grid className = {classes.cardItem} item xs = {12} sm = {6} lg = {3}>
+                            <ProjectCard title="OakTale" description = "A 2D RPG game inspired by Maplestory and Super Mario Bros, written with Lua and Love2D Game development framework" selectedFile = {oakTale} tools = "Lua, Love2D" github = "https://github.com/LamseyD/OakTale" youtube = "https://www.youtube.com/watch?v=sFbyKUHN3ok"/>
+                        </Grid>
+                        <Grid className = {classes.cardItem} item xs = {12} sm = {6} lg = {3}>
+                            <ProjectCard title="Other smaller games" description = "A collection of other smaller 2D games written with Lua and Love2D Game development" tools = "Lua, Love2D" github = "https://github.com/LamseyD/Game-dev-examples"/>
+                        </Grid>
+                    </Grid>
                 </div>
             )
         }
     }
 
 
-    render() {
-        return (
-            <div>
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab> React </Tab>
-                    <Tab> Vue </Tab>
-                    <Tab> Game Development </Tab>
-                </Tabs>
+    return (
+        <div>
+            <Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
+                <Tab> React </Tab>
+                <Tab> Vue </Tab>
+                <Tab> Game Development </Tab>
+            </Tabs>
 
-                    <Grid >
-                        <Cell col={12}>
-                            <div className="content">{this.toggleCategories()}
-                            </div>
-                        </Cell>
-                    </Grid>
-            </div>
-        )
-    }
+            {toggleCategories()}
+            {/* <Grid className = {classes.mainContainer} container alignItems="stretch">
+
+                        // {toggleCategories()}
+
+            </Grid> */}
+        </div>
+    )
 }
 
 export default ProjectScreen
