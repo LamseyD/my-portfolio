@@ -4,11 +4,11 @@ import { Grid } from '@material-ui/core'
 import useStyles from './styles'
 
 import ProjectCard from '../components/ProjectCard/ProjectCard'
-import memories from '../assets/memories.PNG'
-import employees from '../assets/employee.PNG'
+import memories from '../assets/memories.png'
+import employees from '../assets/employee.png'
 import stepFinder from '../assets/stepFinder.jpg'
-import smartShoppers from '../assets/smartShoppers.PNG'
-import oakTale from '../assets/oakTale.PNG'
+import smartShoppers from '../assets/smartShoppers.png'
+import oakTale from '../assets/oakTale.png'
 const ProjectScreen = () => {
 
     const [activeTab, setActiveTab] = useState(0)
