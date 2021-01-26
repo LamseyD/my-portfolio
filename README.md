@@ -5,3 +5,4 @@ https://www.lamsey.dev
 - Should transition to use material ui/react bootstrap, react-mdl is not responsive
 - UPDATE JAN 11 - 2021: Haven't deployed backend yet. Expect update tomorrow, pushing backend to heroku. Right now endpoint is pointing toward localhost. (lol)
 - UPDATE JAN 19 - 2021: Waiting for Riot Games to approve my API key request, still haven't pushed backend yet
+- UPDATE JAN 26 - 2021: Key request still isn't back yet but the back end is online. Gamer cards are still in progress. 
