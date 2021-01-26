@@ -1,5 +1,5 @@
 # Deployed On AWS Amplify
-
+https://www.lamsey.dev
 # Known Issues
 - Developed on 2560 x 1440 screen, needs to be refactored to work with smaller devices. Looking into further fixes with grids (property xs and sm of material ui)
 - Should transition to use material ui/react bootstrap, react-mdl is not responsive
