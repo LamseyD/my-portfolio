@@ -15,10 +15,28 @@ export default makeStyles((theme) => ({
   },
   cardItem: {
     display: "flex", alignItems: "center", justifyContent:"center"
-  }
+  },
+  topPadding: {
+    paddingTop: "15em"
+  },
+  secondParagraph: {
+    paddingTop: "8em",
+    paddingBottom: "10em"
+  },
+  videoPlayer: {
+    width: "50%"
+  },
     //run these css when smaller devices only
-    // [theme.breakpoints.down('sm')]:{
-    // mainContainer:{
-    //     flexDirection:"column-reverse"
-    // }
+    [theme.breakpoints.down('sm')]:{
+    topPadding:{
+      paddingTop: "5em",
+      paddingBottom: "5em"
+    },
+    videoPlayer: {
+      width: "70%"
+    },
+    secondParagraph: {
+      paddingTop: "20em"
+    }
+  }
 }));
