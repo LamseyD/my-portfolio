@@ -16,13 +16,17 @@ function FunScreen (){
 
     return(
 
-        <div style = {{display:"flex", justifyContent: "center", paddingTop: "80px", paddingBottom: "150px"}}> 
-        
-            Work In Progress
+        <div style = {{display:"flex", justifyContent: "center", alignItems: "center", paddingTop: "80px", paddingBottom: "150px", flexDirection: "column"}}> 
+            <div>
+                Work In Progress
 
-            Inserting my League of Legends data request here. In addition to my chess profile :)
-            
-            <GamerCards/>
+                Inserting my League of Legends data request here. In addition to my chess profile :)
+
+            </div>
+            <div>
+                <GamerCards/>
+
+            </div>
 
 
         </div>
