@@ -22,11 +22,7 @@ class AboutMeScreen extends Component {
                                         About Me
                                     </h1>
                                     <p>
-                                        Hi again. My name is Lam and I'm an aspiring fullstack developer and a computer engineering student based in Toronto, Ontario. I enjoy doing web and app development using Node.js frameworks, especially React. Since I love gaming, I also do some game development on the side just for fun, using Lua and LOVE2D game development framework.
-                                    </p>
-
-                                    <p>
-                                        I'm also proficient in doing backend work with object oriented programming, either with Java or Python, and I have some experience with Natural Language Processing and Machine Learning with Scikit-Learn and NLTK
+                                        I enjoy doing web and app development using Node.js frameworks, especially React. Since I love gaming, I also do some game development on the side just for fun, using Lua and LOVE2D game development framework.                                         I'm also proficient in doing backend work with object oriented programming, either with Java or Python, and I have some experience with Natural Language Processing and Machine Learning with Scikit-Learn and NLTK
                                     </p>
 
 
@@ -123,7 +119,7 @@ class AboutMeScreen extends Component {
 
                                             <div style={{ marginTop: '3em', paddingBottom: '10em'}}>
                                                 <p>
-                                                    I have a very long list of hobbies since I am always open to learn new things, I do a little bit of photography once in awhile with my DSLR. However playing the guitar is always on the top of my list. I find it super relaxing and satisfying when I hear the music coming out of my guitar. I love watching sports, whether football or hockey, but I love baseball the most, go Jays! (and occasionally the Tampa Bay Rays.)
+                                                    I have a very long list of hobbies since I am always open to learn new things, I do a little bit of photography once in awhile with my DSLR. However playing the guitar is always on the top of my list. I find it super relaxing and satisfying when I hear the music coming out of my guitar. I love watching sports, whether football or hockey, but I love baseball the most, go Jays! 
                                                 </p>
 
                                                 <p>
