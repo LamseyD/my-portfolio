@@ -6,7 +6,7 @@ import useStyles from './styles'
 
 import { useDispatch } from 'react-redux'
 
-
+import { sendPost } from '../../actions/contact'
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -18,9 +18,12 @@ const Form = () => {
 
     const classes = useStyles();
 
+    const dispatch = useDispatch()
+
     const handleSubmit = (event) => {
         console.log("form submitted")
         event.preventDefault(); //prevent browser refresh
+        dispatch(sendPost(formData))
         clear();
         //if you want to trace dispatch 
         //here -> actions -> reducers.posts -> reducers.index -> "redux store" in src/index.js 
