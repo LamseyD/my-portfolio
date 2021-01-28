@@ -20,7 +20,7 @@ const AboutMeScreen = () => {
         
         return (
             <div>
-                <div className="about-me" style = {{}}>
+                <div className="about-me">
                     <div style = {{height: '90vh', paddingBottom: "100px"}}>
                         <Grid className = {classes.topPadding} container xs = {12} style = {{display: "flex", justifyContent: "center", alignItems: "center"}}>
                             <Grid item xs = {12} sm = {6} style = {{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
