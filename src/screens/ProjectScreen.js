@@ -40,7 +40,7 @@ const ProjectScreen = () => {
             )
         } else if (activeTab === 1) {
             return (
-                <div>
+                <div className = "vueContainer">
                     <Grid className = {classes.vueContainer} container alignItems="stretch">
                         <Grid className = {classes.cardItem} item xs = {12} sm = {3}>
                             <ProjectCard title="smartShoppers" description = "A shopping system management written with JavaScript and Vue.js - Frontend Developer - School Project" selectedFile = {smartShoppers} tools = "Vue.Js, JavaScript" youtube = "https://www.youtube.com/watch?v=ryAGjLRN-Yc&feature=youtu.be"/>
@@ -50,7 +50,7 @@ const ProjectScreen = () => {
             )
         } else if (activeTab === 2) {
             return (
-                <div>
+                <div className = "gameContainer">
                     <Grid className = {classes.gameContainer} container alignItems="stretch">
                         <Grid className = {classes.cardItem} item xs = {12} sm = {6} lg = {3}>
                             <ProjectCard title="OakTale" description = "A 2D RPG game inspired by Maplestory and Super Mario Bros, written with Lua and Love2D Game development framework" selectedFile = {oakTale} tools = "Lua, Love2D" github = "https://github.com/LamseyD/OakTale" youtube = "https://www.youtube.com/watch?v=sFbyKUHN3ok"/>
