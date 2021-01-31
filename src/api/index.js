@@ -9,5 +9,5 @@ export const updateLamsey = () => axios.get(`${league_url}/update`)
 const post_url = `https://backend-website.herokuapp.com/post`
 
 export const sendPost = (post) => { 
-    axios.post(`${post_url}`, {creator: "test", message: "test", subject: "test", email: "test"})
+    axios.post(`${post_url}`, post)
 }
