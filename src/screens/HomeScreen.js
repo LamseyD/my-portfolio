@@ -63,12 +63,6 @@ class HomeScreen extends Component {
                                     lam.dangdinh98@gmail.com 
                                 </Typography>
                             </p>
-                            <p>
-                                <Typography variant = "body1" >
-                                    <PhoneIcon fontSize="small" style = {{marginRight: "1em"}}/>
-                                    +1 (647) 787-4945 
-                                </Typography>
-                            </p>
 
                         </div>
                     </Grid>
